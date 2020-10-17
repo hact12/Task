@@ -17,7 +17,9 @@ def log_request(req: 'flask_request') -> None:
 @app.route('/entry')
 def entry_page() -> 'html':
     return render_template('entry.html')
-
+@app.route('/index')
+def form() -> 'html':
+    return render_template('index.html')
 
 @app.route('/form')
 def form() -> 'html':
